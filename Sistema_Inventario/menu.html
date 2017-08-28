@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    
+    <head>
+        <script language="JavaScript" src="motor.js"></script>
+        <link rel="StyleSheet" type="Text/css" href="estilos.css">
+        <link rel="stylesheet" href="CSS/w1.css">
+<link rel="stylesheet" href="CSS/w2.css">
+<link rel="stylesheet" href="CSS/w3.css">
+
+        <title>Sistema Inventario Bitel</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+</style>
+    </head>
+    
+    <body>
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card-2">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">INICIO</a>
+    <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-padding-large w3-button" title="More">MANTENIMIENTOS <i class="fa fa-caret-down"></i></button>     
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="javascript:Carga('Mantenimientos/Usuario/frmUsuario.html','contenido')" class="w3-bar-item w3-button">Saldos</a>
+        <a href="#" class="w3-bar-item w3-button">Series de Liquidacion</a>
+        <a href="#" class="w3-bar-item w3-button">Tipos de Documentos</a>
+ 	<a href="javascript:Carga('Mantenimientos/PlanesTarifarios/frmPlanTarifario.html','contenido')" class="w3-bar-item w3-button">Planes Tarifarios</a>
+        <a href="javascript:Carga('Mantenimientos/ModelosChip/frmModelChips.html','contenido')" class="w3-bar-item w3-button">Modelos de Chips</a>
+        <a href="#" class="w3-bar-item w3-button">Agentes</a>
+        <a href="javascript:Carga('Mantenimientos/ModelosMarcas/frmModelMarcas.html','contenido')" class="w3-bar-item w3-button">Marcas</a>
+        <a href="javascript:Carga('Mantenimientos/Locales/frmLocales.html','contenido')" class="w3-bar-item w3-button">Locales</a>
+        <a href="javascript:Carga('Mantenimientos/IDEquipos/frmIdEquipos.html','contenido')" class="w3-bar-item w3-button">ID Equipos</a>
+        <a href="javascript:Carga('Mantenimientos/ModelosEquipo/frmModelEquipos.html','contenido')" class="w3-bar-item w3-button">Modelo de Equipos</a>
+        <a href="javascript:Carga('Mantenimientos/Usuario/frmUsuario.html','contenido')" class="w3-bar-item w3-button">Usuarios</a>
+        <a href="javascript:Carga('Mantenimientos/IGV/frmIGV.html','contenido')" class="w3-bar-item w3-button">IGV</a>
+      </div>
+    </div>
+    <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-padding-large w3-button" title="More">PROCEDIMIENTOS <i class="fa fa-caret-down"></i></button>     
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="#" class="w3-bar-item w3-button">Registrar Inventario</a>
+        <a href="#" class="w3-bar-item w3-button">Venta Recargas</a>
+        <a href="#" class="w3-bar-item w3-button">Trasnferir Recargas</a>
+        <a href="#" class="w3-bar-item w3-button">Generar Notas de Credito/Debito</a>
+        <a href="#" class="w3-bar-item w3-button">Registrar Salidas</a>
+        <a href="#" class="w3-bar-item w3-button">Buscar</a>
+        <a href="#" class="w3-bar-item w3-button">Buscar por Modelo</a>
+      </div>
+    </div>
+    <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-padding-large w3-button" title="More">REPORTES <i class="fa fa-caret-down"></i></button>     
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="#" class="w3-bar-item w3-button">Stock Actual</a>
+        <a href="#" class="w3-bar-item w3-button">Stock Valorizado</a>
+        <a href="#" class="w3-bar-item w3-button">Reprote de Ventas</a>
+        <a href="#" class="w3-bar-item w3-button">Kardex</a>
+        <a href="#" class="w3-bar-item w3-button">Grafica de Ventas por Modelo</a>
+      </div>
+    </div>
+    <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-padding-large w3-button" title="More">BACKUP <i class="fa fa-caret-down"></i></button>     
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="#" class="w3-bar-item w3-button">Crear BACKUP</a>
+        <a href="#" class="w3-bar-item w3-button">Ver BACKUPs</a>
+        <a href="#" class="w3-bar-item w3-button">Recuperar BACKUP</a>
+      </div>
+    </div>
+    <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-padding-large w3-button" title="More">ARCHIVOS <i class="fa fa-caret-down"></i></button>     
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="#" class="w3-bar-item w3-button">Subir EXCEL Kardex</a>
+        <a href="#" class="w3-bar-item w3-button">Subir Compras</a>
+        <a href="#" class="w3-bar-item w3-button">Subir Traslados</a>
+      </div>
+    </div>
+    <a href=# class="w3-padding-large w3-hover-red w3-hide-small w3-right"> Ingresar </a>
+    <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
+  </div>
+</div>
+
+<!-- Page content -->
+<div id="contenido" class="w3-content" style="max-width:2000px;margin-top:46px">
+
+  <!-- Automatic Slideshow Images -->
+  <div class="mySlides w3-display-container w3-center">
+    <img src="images/LOGO_BITEL.png" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">  
+    </div>
+  </div>
+
+
+  
+ 
+
+<!-- End Page Content -->
+</div>
+
+
+<script>
+// Automatic Slideshow - change image every 4 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 4000);    
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+
+// When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+</body>
+</html>
