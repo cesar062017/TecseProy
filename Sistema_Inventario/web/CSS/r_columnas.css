@@ -7,6 +7,7 @@ and open the template in the editor.
     Created on : 23-ago-2017, 19:38:59
     Author     : Ricardo Cutimbo
 */
+
 #fondo{
     float:left;
     left: 63px;
@@ -18,6 +19,7 @@ and open the template in the editor.
     height: 100%;
     z-index: 1;
     background-color: #FFFF00;
+    
 }
 #hoja1{
     float:left;
@@ -26,9 +28,10 @@ and open the template in the editor.
     margin-left: 3%;
     margin-top: 3%;
     width: 46%;
-    height: 675px;
+    height: 95%;
     z-index: 2;
     background-color: #2471A3;
+    text-align: center;
 }
 #hoja2{
     float: right;
@@ -37,7 +40,12 @@ and open the template in the editor.
     margin-right: 3%;
     margin-top: 3%;
     width: 46%;
-    height: 675px;
+    height: 95%;
     z-index: 2;
     background-color: #3498DB;
+    text-align: center;
+}
+
+.campo{
+    border:5px;
 }

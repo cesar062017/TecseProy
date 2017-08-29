@@ -6,20 +6,42 @@ and open the template in the editor.
 -->
 <html>
     <head>
-        <title>TODO supply a title</title>
+        <title>Sistema Inventario</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">           
         <style>
+            body{
+                background:url(images/LOGO_BITELindex.png);
+                background-repeat: repeat-y;
+                background-size:100%;
+            }
             #rectangulo{
-                width:400px;
-                height:500px;
-                background:#F1C40F;
+                margin-left:40%;
+                width:350px;
+                height:300px;
+                background-color: #FFFF00;
+                opacity:.9;
+                align-content: center;
+                text-align: center;
+                 
             }
             .center {
                 margin: auto;
                 width: 50%;
-                border: 3px solid green;
+                border: 3px solid #2471A3;
                 padding: 10px;
+            }
+            label{
+                margin:20px;
+            }
+            
+            input{
+                margin:20px
+            }
+            
+            #boton{
+                margin:20px;
+                width:100px;
             }
         </style>
     </head>
@@ -28,7 +50,7 @@ and open the template in the editor.
             <div id="rectangulo" class="center">
                 <div>
                     <h2>
-                        Sistema de Inventario Bitel-Marks
+                        Sistema de Inventario Tecsefono
                     </h2>
                 </div>
                 <div>
@@ -44,7 +66,7 @@ and open the template in the editor.
                     <input id="contra" name="password" class="center" placeholder="Ingrese contraseña" required>
                 </div>
                 <div>
-                    <input type="submit" value="Ingresar">
+                    <input id="boton" type="submit" value="Ingresar">
                 </div>
                 <div>
                     <a></a>
